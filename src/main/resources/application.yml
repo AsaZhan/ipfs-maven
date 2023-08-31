@@ -1,0 +1,5 @@
+server:
+  port: 7001
+ipfs:
+  # your ipfs cluster
+  clusters: /ip4/172.16.2.70/tcp/5001
