@@ -1,9 +1,10 @@
-package org.ipfs.service;
+package org.ipfs.service.impl;
 
 import io.ipfs.api.IPFS;
 import org.apache.commons.logging.Log;
 import org.apache.commons.logging.LogFactory;
 import org.ipfs.bean.IPFSCluster;
+import org.ipfs.service.IPFSService;
 import org.ipfs.utils.FileUtils;
 import org.springframework.beans.factory.annotation.Autowired;
 import org.springframework.stereotype.Service;
@@ -13,7 +14,7 @@ import java.io.File;
 import java.util.List;
 
 @Service
-public class IPFSServiceImpl implements IPFSService{
+public class IPFSServiceImpl implements IPFSService {
     private static final Log log = LogFactory.getLog(IPFSServiceImpl.class);
 
     @Autowired
